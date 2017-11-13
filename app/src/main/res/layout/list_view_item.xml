@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.listview.checkable.checkable_listview.CheckableRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+
+    <ImageView
+        android:id="@+id/player_photo_image_view"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/ginobili"
+        android:layout_marginStart="5dp"/>
+
+    <TextView
+        android:id="@+id/player_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:duplicateParentState="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="13dp"
+        android:textColor="@color/check_color_selector"
+        android:layout_toEndOf="@+id/player_photo_image_view"
+        android:text="Emanuel Ginobili"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/player_height_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:duplicateParentState="true"
+        android:textColor="@color/check_color_selector"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/player_name_text_view"
+        android:layout_marginBottom="10dp"
+        android:text="198 cm" />
+
+    <TextView
+        android:id="@+id/player_age_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:duplicateParentState="true"
+        android:textColor="@color/check_color_selector"
+        android:layout_alignBaseline="@+id/player_height_text_view"
+        android:layout_alignBottom="@+id/player_height_text_view"
+        android:layout_centerHorizontal="true"
+        android:text="40 years old" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:duplicateParentState="true"
+        android:layout_marginEnd="24dp"
+        app:srcCompat="@drawable/check_drawable_selector" />
+</com.listview.checkable.checkable_listview.CheckableRelativeLayout>
